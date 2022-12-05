@@ -306,19 +306,22 @@ img {
 }
 .subtitle {
   position: absolute;
+  display: flex;
   left: 0;
   bottom: 0;
   background-color: rgb(47, 48, 58, 0.8);
   width: 100%;
-  padding: 27px 0;
+  height: 70px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
   color: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
 .products-list-title {
@@ -782,8 +785,11 @@ img {
 
 .footer-icons {
   display: flex;
-  gap: 70px;
   align-items: baseline;
+}
+
+.adress-information {
+  margin-right: 70px;
 }
 
 .backdrop {
@@ -820,6 +826,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .close-modal {
@@ -892,17 +899,16 @@ img {
   padding-bottom: 15px;
   padding-left: 16px;
   margin-right: 12px;
+  color: #ffffff;
 }
 
 .footer-div {
-  margin-left: 30px;
+  margin-left: auto;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .modal-title {
@@ -914,8 +920,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-top: 40px;
-  padding-bottom: 20px;
+  margin-bottom: 12px;
+  margin-top: 0;
 }
 
 textarea {
@@ -964,6 +970,13 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  padding: 12px 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .textarea-field:hover,
